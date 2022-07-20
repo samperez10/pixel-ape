@@ -16,6 +16,8 @@ def metadata(id):
   url = f"https://bafybeiebbjeolsgnoodqokcvwtlgzxly25jqpdn533m4dyzy7szgrdnfka.ipfs.nftstorage.link/{id}.json"
   
   js = req.get(url).json()
+
+  js['description'] = f'A collection of 2,222 NFTs living in chaos under Polygon Blockchain.'
   
   return jsonify(js)
 
